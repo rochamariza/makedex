@@ -1,4 +1,4 @@
-# Mákedéx
+# Màkedéx
 
 ## A melhor pokedex(ela/dela) feminista do Brasil
 
