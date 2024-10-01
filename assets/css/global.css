@@ -72,6 +72,15 @@ body{
     color: white;
     font-family: "Montserrat", sans-serif;
 }
+.pokemon-buscado{
+    margin-top: 40px;
+}
+.pokemon-buscado li.pokemon{
+    border-color: #8f0000;
+    border: 4px solid;
+    background-color: rgb(255, 255, 255);
+    color: #8f0000;
+}
 .iniciais{
     text-align: center;
     margin-bottom: 40px;
@@ -99,7 +108,7 @@ ol.pokemons{
     color: rgb(0, 134, 7);
     background-color: rgb(227, 255, 185);
     border-radius: 30px;
-    width: 200px;
+    width: 240px;
 }
 .pokeid{
     text-align: right;
@@ -140,7 +149,7 @@ ol.pokemons{
         list-style: none;
     }
 }
-@media (max-width:409px) {
+@media (max-width:512px) {
     ol.pokemons{
         display: grid;
         grid-template-columns: repeat(1, auto);
