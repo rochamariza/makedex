@@ -20,25 +20,26 @@
         </div>
         <div class="main">
             <main>
+                <form action="" class="form">
                 <div class="procurar">
-                <input type="search" name="Procurar" id="search" placeholder="Digite o nome do Pokemon">
+                <input type="search" name="Procurar" id="search" placeholder="Digite o nome ou número do Pokemon">
                 <button type="submit">Procurar</button>
                     <div class="pokemon-buscado">
                         <ol class="pokemons">
                             <li class="pokemon">
-                                <span class="pokeid">#001</span>
-                                <span class="nomes">Teste</span>
+                                <span class="pokeid_escolhido"></span>
+                                <span class="nome_escolhido"></span>
                                 <div class="info">
-                                    <ol class="info-dos-pokemons">
-                                        <li>Teste</li>
-                                        <li>Teste</li>
+                                    <ol class="info-dos-pokemons escolhido">
+                                        <li></li>
                                     </ol>
-                                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt=""> 
+                                    <img class="image_pokemon" src=""> 
                                 </div>
                             </li>
                         </ol>
                     </div>
                 </div>
+                </form>
                 <h3 class="iniciais">Pokemons Iniciais</h3>
                 <div class="pokedex">                    
                    <ol class="pokemons">
@@ -141,6 +142,6 @@
                 </div>
               </main>
         </div>
-        <script src="assets/js/main.js"></script>
+        <script src="assets/js/main_alternativo.js"></script>
 </body>
 </html>

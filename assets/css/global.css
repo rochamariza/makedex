@@ -27,7 +27,7 @@ body{
 }
 .main input[type="search"]{
     margin-block: 40px 20px;
-    width: 300px;
+    width: 400px;
     height: 40px;
     border-radius: 20px;
     border: none;
@@ -73,6 +73,7 @@ body{
     font-family: "Montserrat", sans-serif;
 }
 .pokemon-buscado{
+    display: none;
     margin-top: 40px;
 }
 .pokemon-buscado li.pokemon{
@@ -80,6 +81,13 @@ body{
     border: 4px solid;
     background-color: rgb(255, 255, 255);
     color: #8f0000;
+}
+.pokeid_escolhido{
+    text-align: right;
+    opacity: 40%;
+}
+.nome_escolhido{
+    font-size: 20px;
 }
 .iniciais{
     text-align: center;
@@ -156,5 +164,14 @@ ol.pokemons{
         grid-template-rows: repeat(3, auto);
         gap: 10px;
         list-style: none;
+    }
+    .main input[type="search"]{
+        width: 300px;
+
+    }
+    .main input[type="search"]::placeholder{
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
     }
 }
