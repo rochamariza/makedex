@@ -25,7 +25,12 @@ const renderPoke = async (pokemon) => {
         cartao.style.display = "block";
         pokeName.innerHTML = data.name.charAt(0).toUpperCase() + data.name.slice(1).toLowerCase()
         pokeID.innerHTML = `#${data.id}`
-        statsPoke.innerHTML = data['types']['0']['type']['name']
+        statsPoke.innerHTML = '';
+        data['types'].forEach(typeInfo => {
+            const typeElement = document.createElement('div'); 
+            typeElement.textContent = typeInfo['type']['name'];
+            statsPoke.appendChild(typeElement);
+        });
         imagePoke.src = data['sprites']['other']['official-artwork']['front_default']
         inputSearch.value = '';
     }
