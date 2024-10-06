@@ -19,6 +19,8 @@ const fetchApiPokemon = async (pokemon) => {
 const renderPoke = async (pokemon) => {
 
     pokeName.innerHTML = 'Carregando...'
+    statsPoke.innerHTML = 'Carregando...'
+    pokeID.innerHTML = 'Carregando...'
     const data = await fetchApiPokemon(pokemon);
 
     if(data){
